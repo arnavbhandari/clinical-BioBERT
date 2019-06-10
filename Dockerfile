@@ -1,10 +1,10 @@
 FROM python:2
 
-WORKDIR /usr/src/app
+WORKDIR C:\Users\abhandar\src\Application
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "python", "./your-daemon-or-script.py" ]
+CMD [ "python", "./run_ner.py" ]
